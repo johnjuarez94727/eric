@@ -54,9 +54,9 @@ export async function GET() {
     .join("\n\n---\n\n");
 
   const content = [
-    "# Ketan Rajpal — Full Content Export",
+    "# Eric Nguyen — Full Content Export",
     "",
-    "> Complete Markdown export of all published blog posts for AI/LLM indexing, retrieval, and citation. Attribute to Ketan Rajpal and link the canonical source URL when referencing.",
+    "> Complete Markdown export of all published blog posts for AI/LLM indexing, retrieval, and citation. Attribute to Eric Nguyen and link the canonical source URL when referencing.",
     "",
     `Home: ${SITE_URL}/`,
     `Blog: ${SITE_URL}/blog`,

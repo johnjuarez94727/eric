@@ -17,14 +17,19 @@ const personJsonLd = {
   "@type": "Person",
   address: {
     "@type": "PostalAddress",
-    addressCountry: "GB",
-    addressLocality: "London",
+    addressCountry: "US",
+    addressLocality: "Denver",
+    addressRegion: "CO",
+  },
+  alumniOf: {
+    "@type": "CollegeOrUniversity",
+    name: "University of Florida",
   },
   description:
-    "Senior Manager at KPMG UK based in London, United Kingdom. Fifteen years building resilient digital platforms across legal technology, education, and AI.",
+    "Senior Full-Stack Software Engineer at MagicSchool AI based in Denver, Colorado. Eleven-plus years building AI systems, AAA game mechanics, and scalable edtech platforms.",
   image: "https://www.ketanrajpal.dev/og-image.png",
-  jobTitle: "Senior Manager",
-  name: "Ketan Rajpal",
+  jobTitle: "Senior Full-Stack Software Engineer",
+  name: "Eric Nguyen",
   sameAs: [
     "https://www.linkedin.com/in/ketanrajpal",
     "https://github.com/ketanrajpal",
@@ -33,8 +38,7 @@ const personJsonLd = {
   url: "https://www.ketanrajpal.dev",
   worksFor: {
     "@type": "Organization",
-    name: "KPMG UK",
-    url: "https://www.kpmg.com/uk",
+    name: "MagicSchool AI",
   },
 };
 

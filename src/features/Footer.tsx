@@ -1,7 +1,4 @@
-import Image from "next/image";
 import Link from "next/link";
-
-import ProfileImage from "@/images/ketan-rajpal.jpg";
 
 const socials = [
   {
@@ -68,11 +65,6 @@ const socials = [
 export const Footer = () => {
   return (
     <footer className="flex flex-col items-center gap-8 py-8 md:gap-12 md:py-12 bg-slate-950">
-      <Image
-        alt="Ketan Rajpal"
-        className="h-24 w-24 rounded-3xl object-cover sm:h-32 sm:w-32 md:h-40 md:w-40 rotate-2"
-        src={ProfileImage}
-      />
       <Link
         className=" font-semibold font-serif text-slate-300 tracking-wide text-3xl md:text-6xl"
         href="mailto:hello@ketanrajpal.dev"
@@ -110,7 +102,7 @@ export const Footer = () => {
             />
           </svg>
         </span>
-        <span>by Ketan Rajpal</span>
+        <span>by Eric Nguyen</span>
       </div>
     </footer>
   );

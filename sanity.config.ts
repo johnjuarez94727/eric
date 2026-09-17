@@ -15,14 +15,14 @@ import { structure } from "./src/sanity/structure";
 
 export default defineConfig({
   basePath: "/studio",
-  dataset,
+  dataset: dataset || "production",
   plugins: [
     structureTool({ structure }),
     // Vision is for querying with GROQ from inside the Studio
     // https://www.sanity.io/docs/the-vision-plugin
     visionTool({ defaultApiVersion: apiVersion }),
   ],
-  projectId,
+  projectId: projectId || "placeholder",
   // Add and edit the content schema in the './sanity/schemaTypes' folder
   schema,
 });

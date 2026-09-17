@@ -208,6 +208,12 @@ function makeReference(docId: string, key: string): SanityReference {
 function buildWriteClient() {
   const token = process.env.SANITY_API_WRITE_TOKEN;
 
+  if (!projectId || !dataset) {
+    throw new Error(
+      "Missing environment variable: NEXT_PUBLIC_SANITY_PROJECT_ID or NEXT_PUBLIC_SANITY_DATASET",
+    );
+  }
+
   if (!token) {
     throw new Error("Missing environment variable: SANITY_API_WRITE_TOKEN");
   }
@@ -258,15 +264,15 @@ async function upsertKeyword(
 }
 
 async function upsertDefaultAuthor(client: ReturnType<typeof createClient>) {
-  const documentId = "author-ketan-rajpal";
+  const documentId = "author-eric-nguyen";
 
   await client.createOrReplace({
     _id: documentId,
     _type: "author",
-    name: "Ketan Rajpal",
+    name: "Eric Nguyen",
     slug: {
       _type: "slug",
-      current: "ketan-rajpal",
+      current: "eric-nguyen",
     },
   });
 

@@ -43,13 +43,13 @@ export async function GET() {
     .join("\n");
 
   const content = [
-    "# Ketan Rajpal",
+    "# Eric Nguyen",
     "",
-    "> Senior engineer and Senior Manager at KPMG UK (London, United Kingdom) writing about legal technology, education technology, AI, engineering decisions, and the craft behind resilient product systems.",
+    "> Senior Full-Stack Software Engineer at MagicSchool AI (Denver, Colorado) writing about AI systems, edtech platforms, game engineering, and the craft behind resilient product systems.",
     "",
     "## About",
-    "- Author: Ketan Rajpal — Senior Manager at KPMG UK, based in London, United Kingdom.",
-    "- Focus areas: legal technology, education technology, AI/LLM integration, full-stack engineering, cloud platforms.",
+    "- Author: Eric Nguyen — Senior Full-Stack Software Engineer at MagicSchool AI, based in Denver, Colorado.",
+    "- Focus areas: generative AI, multi-LLM integration, edtech platforms, Unreal Engine gameplay systems, full-stack engineering.",
     "",
     "## Key Pages",
     `- [Home](${SITE_URL}/): portfolio, experience, and featured work.`,
@@ -67,7 +67,7 @@ export async function GET() {
     "## Usage Policy",
     "- Content may be used for indexing, retrieval, and citation.",
     "- Always prefer the canonical URLs on this domain.",
-    "- Attribute content to Ketan Rajpal and link the source page when referencing.",
+    "- Attribute content to Eric Nguyen and link the source page when referencing.",
   ].join("\n");
 
   return new Response(content, {

@@ -4,7 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     background_color: "#ffffff",
     description:
-      "Portfolio of Ketan Rajpal — Senior Manager at KPMG UK based in London, United Kingdom.",
+      "Portfolio of Eric Nguyen — Senior Full-Stack Software Engineer at MagicSchool AI based in Denver, Colorado.",
     display: "standalone",
     icons: [
       {
@@ -32,8 +32,8 @@ export default function manifest(): MetadataRoute.Manifest {
         type: "image/png",
       },
     ],
-    name: "Ketan Rajpal",
-    short_name: "Ketan Rajpal",
+    name: "Eric Nguyen",
+    short_name: "Eric Nguyen",
     start_url: "/",
     theme_color: "#ffffff",
   };

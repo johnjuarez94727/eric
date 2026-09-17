@@ -26,11 +26,11 @@ export const metadata: Metadata = {
       "application/rss+xml": "https://www.ketanrajpal.dev/rss.xml",
     },
   },
-  authors: [{ name: "Ketan Rajpal", url: "https://www.ketanrajpal.dev" }],
+  authors: [{ name: "Eric Nguyen", url: "https://www.ketanrajpal.dev" }],
   category: "Technology",
-  creator: "Ketan Rajpal",
+  creator: "Eric Nguyen",
   description:
-    "Portfolio of Ketan Rajpal — Senior Manager at KPMG UK based in London, United Kingdom, specialising in legal technology, education technology, and AI. Fifteen years shipping resilient, scalable digital platforms that keep working when stakes are high.",
+    "Portfolio of Eric Nguyen — Senior Full-Stack Software Engineer at MagicSchool AI based in Denver, Colorado, specialising in AI systems, AAA game mechanics, and scalable edtech. Eleven-plus years shipping resilient, high-impact digital products that keep working when stakes are high.",
   icons: {
     apple: [{ sizes: "180x180", type: "image/png", url: "/apple-icon.png" }],
     icon: [
@@ -42,48 +42,42 @@ export const metadata: Metadata = {
     shortcut: "/favicon.ico",
   },
   keywords: [
-    "Ketan Rajpal",
-    "Senior Engineer",
-    "Senior Manager",
-    "KPMG UK",
-    "Legal Technology",
-    "Education Technology",
+    "Eric Nguyen",
+    "Senior Full-Stack Software Engineer",
+    "MagicSchool AI",
+    "Edtech Engineer",
     "AI Engineer",
     "Full Stack Developer",
     "Software Portfolio",
-    "London Developer",
-    "Agentic AI",
-    "LLM Integration",
-    "Freelance full stack developer London",
-    "Senior software engineer for hire UK",
-    "Custom web application development",
-    "React and Django developer UK",
+    "Denver Developer",
+    "Multi-LLM Integration",
+    "Unreal Engine",
+    "React and TypeScript developer",
     "AI integration developer",
-    "Enterprise platform development",
-    "Legal technology developer UK",
+    "FERPA compliant architecture",
     "Education technology developer",
-    "Cloud migration consultant",
-    "Bespoke software development London",
+    "Game systems engineer",
+    "Generative AI tools",
   ],
   metadataBase: new URL("https://www.ketanrajpal.dev"),
   openGraph: {
     description:
-      "Senior Manager at KPMG UK, based in London, United Kingdom. Fifteen years building resilient digital platforms across legal technology, education, and AI.",
+      "Senior Full-Stack Software Engineer at MagicSchool AI, based in Denver, Colorado. Eleven-plus years building AI systems, AAA game mechanics, and scalable edtech platforms.",
     images: [
       {
-        alt: "Ketan Rajpal — Senior Engineer",
+        alt: "Eric Nguyen — Senior Engineer",
         height: 941,
         url: "/og-image.png",
         width: 1672,
       },
     ],
-    locale: "en_GB",
-    siteName: "Ketan Rajpal",
-    title: "Ketan Rajpal | Senior Engineer",
+    locale: "en_US",
+    siteName: "Eric Nguyen",
+    title: "Eric Nguyen | Senior Engineer",
     type: "website",
     url: "https://www.ketanrajpal.dev",
   },
-  publisher: "Ketan Rajpal",
+  publisher: "Eric Nguyen",
   robots: {
     follow: true,
     googleBot: {
@@ -106,16 +100,16 @@ export const metadata: Metadata = {
       }
     : {}),
   title: {
-    default: "Ketan Rajpal | Senior Engineer",
-    template: "%s | Ketan Rajpal",
+    default: "Eric Nguyen | Senior Engineer",
+    template: "%s | Eric Nguyen",
   },
   twitter: {
     card: "summary_large_image",
     creator: "@ketanrajpal",
     description:
-      "Senior Manager at KPMG UK, based in London, United Kingdom. Fifteen years building resilient digital platforms across legal technology, education, and AI.",
+      "Senior Full-Stack Software Engineer at MagicSchool AI, based in Denver, Colorado. Eleven-plus years building AI systems, AAA game mechanics, and scalable edtech platforms.",
     images: ["/og-image.png"],
-    title: "Ketan Rajpal | Senior Engineer",
+    title: "Eric Nguyen | Senior Engineer",
   },
 };
 
@@ -143,7 +137,7 @@ export default function RootLayout({
         <link
           href="https://www.ketanrajpal.dev/rss.xml"
           rel="alternate"
-          title="Ketan Rajpal RSS Feed"
+          title="Eric Nguyen RSS Feed"
           type="application/rss+xml"
         />
         <script
@@ -151,7 +145,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              name: "Ketan Rajpal",
+              name: "Eric Nguyen",
               potentialAction: {
                 "@type": "SearchAction",
                 query: "required",

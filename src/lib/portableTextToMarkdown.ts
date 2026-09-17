@@ -42,7 +42,7 @@ export function generateJsonContent(
     title?: null | string;
   },
   slug: string,
-  author = "Ketan Rajpal",
+  author = "Eric Nguyen",
 ): string {
   const bodyMarkdown = portableTextToMarkdown(post.body);
 

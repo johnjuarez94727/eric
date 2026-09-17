@@ -1,7 +1,3 @@
-import Image from "next/image";
-
-import ProfileImage from "@/images/ketan-rajpal.jpg";
-
 export const Home = () => {
   return (
     <section
@@ -12,7 +8,7 @@ export const Home = () => {
         <div className="flex items-center gap-4">
           <span className="h-0.5 w-10 shrink-0 bg-black block" />
           <h1 className="text-lg font-medium tracking-wide md:text-2xl">
-            I&apos;m Ketan Rajpal
+            I&apos;m Eric Nguyen
           </h1>
         </div>
 
@@ -20,21 +16,15 @@ export const Home = () => {
           <h2 className="font-serif text-[clamp(3.5rem,12vw,10rem)] font-medium leading-none tracking-wide">
             Senior
           </h2>
-          <Image
-            alt="Ketan Rajpal"
-            className="h-24 w-24 rotate-2 rounded-3xl object-cover sm:h-32 sm:w-32 md:h-40 md:w-40"
-            priority
-            src={ProfileImage}
-          />
           <h2 className="font-serif text-[clamp(3.5rem,12vw,10rem)] font-medium leading-none tracking-wide">
             Engineer
           </h2>
         </div>
 
         <p className="max-w-3xl text-zinc-500 leading-loose font-medium sm:text-lg md:text-xl lg:text-2xl text-pretty tracking-wide">
-          Based in London, United Kingdom. I design and build durable digital
-          products across legal technology, education, and AI. Fifteen years
-          shipping platforms that keep working when stakes are high. The code
+          Based in Denver, Colorado. I design and build high-impact AI systems,
+          AAA game mechanics, and scalable edtech platforms. Eleven-plus years
+          shipping products that keep working when stakes are high. The code
           stays invisible. The impact doesn&apos;t.
         </p>
       </div>

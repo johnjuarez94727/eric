@@ -8,7 +8,6 @@ import { notFound } from "next/navigation";
 
 import { CardTag } from "@/components/Card";
 import { RelatedPostsSlider } from "@/features/RelatedPostsSlider";
-import ProfileImage from "@/images/ketan-rajpal.jpg";
 import { client } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
 
@@ -81,21 +80,21 @@ export async function generateMetadata({
     : undefined;
 
   const description = getPostDescription(post);
-  const metaTitle = post.title ? post.title : "Ketan Rajpal's Blog Post";
+  const metaTitle = post.title ? post.title : "Eric Nguyen's Blog Post";
   const ogImageAlt = post.mainImage?.alt ?? metaTitle;
 
   const defaultKeywords = [
-    "Ketan Rajpal",
-    "Freelance full stack developer London",
-    "Senior software engineer for hire UK",
-    "Custom web application development",
-    "React and Django developer UK",
-    "AI integration developer",
-    "Enterprise platform development",
-    "Legal technology developer UK",
-    "Education technology developer",
-    "Cloud migration consultant",
-    "Bespoke software development London",
+    "Eric Nguyen",
+    "Senior full-stack software engineer Denver",
+    "AI edtech engineer",
+    "Multi-LLM integration developer",
+    "React and TypeScript developer",
+    "Unreal Engine gameplay engineer",
+    "FERPA compliant architecture",
+    "Generative AI tools for education",
+    "Scalable edtech platforms",
+    "MagicSchool AI engineer",
+    "Custom AI tool builder",
   ];
 
   defaultKeywords.push(...(post.metaKeywords ?? []));
@@ -113,11 +112,11 @@ export async function generateMetadata({
 
   return {
     alternates: { canonical: `https://www.ketanrajpal.dev/blog/${slug}` },
-    authors: [{ name: "Ketan Rajpal", url: "https://www.ketanrajpal.dev" }],
+    authors: [{ name: "Eric Nguyen", url: "https://www.ketanrajpal.dev" }],
     description,
     keywords: keywords,
     openGraph: {
-      authors: ["Ketan Rajpal"],
+      authors: ["Eric Nguyen"],
       ...(ogImage && {
         images: [{ alt: ogImageAlt, height: 630, url: ogImage, width: 1200 }],
       }),
@@ -125,12 +124,12 @@ export async function generateMetadata({
       locale: "en_GB",
       modifiedTime: post._updatedAt,
       publishedTime: post._createdAt,
-      siteName: "Ketan Rajpal",
+      siteName: "Eric Nguyen",
       title: metaTitle,
       type: "article",
       url: `https://www.ketanrajpal.dev/blog/${slug}`,
     },
-    title: { absolute: `${metaTitle} - Ketan Rajpal` },
+    title: { absolute: `${metaTitle} - Eric Nguyen` },
     twitter: {
       ...(ogImage && {
         images: [{ alt: ogImageAlt, url: ogImage }],
@@ -263,7 +262,7 @@ export default async function BlogPost({
     ...(post.category ? { articleSection: post.category } : {}),
     author: {
       "@type": "Person",
-      name: "Ketan Rajpal",
+      name: "Eric Nguyen",
       url: "https://www.ketanrajpal.dev",
     },
     dateModified: post._updatedAt,
@@ -288,7 +287,7 @@ export default async function BlogPost({
     publisher: {
       "@type": "Person",
       image: "https://www.ketanrajpal.dev/og-image.png",
-      name: "Ketan Rajpal",
+      name: "Eric Nguyen",
     },
     url: `https://www.ketanrajpal.dev/blog/${slug}`,
     ...(getWordCount(post.body) ? { wordCount: getWordCount(post.body) } : {}),
@@ -336,13 +335,8 @@ export default async function BlogPost({
               <div className="flex flex-row justify-between items-center mb-6">
                 {post.category && <CardTag tag={post.category} />}
                 <Link className="flex items-center gap-4" href="/">
-                  <Image
-                    alt="Ketan Rajpal"
-                    className="h-10 w-10 rotate-2 rounded-full object-cover"
-                    src={ProfileImage}
-                  />
                   <p className="text-base leading-loose text-pretty tracking-wide text-zinc-500 font-bold">
-                    Ketan Rajpal
+                    Eric Nguyen
                   </p>
                 </Link>
               </div>

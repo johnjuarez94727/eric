@@ -9,7 +9,7 @@ import {
 } from "motion/react";
 import Image from "next/image";
 
-import KetanRajpalLogo from "@/images/logo.svg";
+import EricNguyenLogo from "@/images/logo.svg";
 
 export const Logo = () => {
   const { scrollY } = useScroll();
@@ -26,7 +26,7 @@ export const Logo = () => {
       className="flex items-center"
       style={{ rotate: shouldReduceMotion ? 0 : rotate }}
     >
-      <Image alt="Ketan Rajpal" className="h-10 w-auto" src={KetanRajpalLogo} />
+      <Image alt="Eric Nguyen" className="h-10 w-auto" src={EricNguyenLogo} />
     </motion.div>
   );
 };

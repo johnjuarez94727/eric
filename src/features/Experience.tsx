@@ -7,57 +7,73 @@ import { useRef } from "react";
 import { CardHeading, CardParagraph, CardTag } from "@/components/Card";
 import { Heading } from "@/components/Heading";
 
-import FreelanceLogo from "../images/logos/freelance.svg";
-import KpmgUkLogo from "../images/logos/kpmg-uk.svg";
-import LscGroupLogo from "../images/logos/lsc-group.svg";
-import StudySmartLogo from "../images/logos/study-smart.svg";
-import TorusLabsLogo from "../images/logos/torus-labs.svg";
+import EdiaLogo from "../images/logos/edia.png";
+import GearboxLogo from "../images/logos/gearbox.png";
+import KaplanLogo from "../images/logos/kaplan.png";
+import MagicSchoolLogo from "../images/logos/magicschool.png";
+import RokuLogo from "../images/logos/roku.png";
+import UniversityOfFloridaLogo from "../images/logos/university-of-florida.png";
 
 const experiences = [
   {
-    color: "#00338d",
-    company: "KPMG UK",
+    color: "transparent",
+    company: "MagicSchool AI",
     description:
-      "Led transformation of an international legal platform into a configurable product on HighQ, TypeScript, and React, while driving AI and automation delivery across complex client programs.",
-    logo: KpmgUkLogo,
-    role: "Senior Manager, Legal Technology",
-    year: "2023 - Present",
+      "Led full-stack development of Magic Quizzes and Studio Mode in React and TypeScript, plus a no-code AI Tool Builder with multi-LLM backends and FERPA-aligned school security.",
+    logo: MagicSchoolLogo,
+    logoPadded: false,
+    role: "Senior Full-Stack Software Engineer",
+    year: "2024 - Present",
   },
   {
-    color: "#ed1a25",
-    company: "London School of Commerce",
+    color: "transparent",
+    company: "Edia",
     description:
-      "Architected and maintained multi-country admissions, student, and learning systems, and led critical cloud migrations and remote operations delivery during Covid across six campuses.",
-    logo: LscGroupLogo,
-    role: "Full Stack Developer, Education Technology",
-    year: "2013 - 2023",
+      "Built Edia's AI attendance platform end to end — Node.js and React services for real-time absence tracking, multilingual parent outreach, and MTSS analytics on Python and PostgreSQL.",
+    logo: EdiaLogo,
+    logoPadded: false,
+    role: "Senior Software Engineer",
+    year: "2022 - 2024",
   },
   {
-    color: "#020618",
-    company: "Freelance",
+    color: "transparent",
+    company: "Gearbox Entertainment",
     description:
-      "Delivered 100+ projects for 60+ clients across government, education, and commercial sectors, covering full-stack engineering, product design, and infrastructure guidance.",
-    logo: FreelanceLogo,
-    role: "Designer and Developer",
-    year: "2011 - 2021",
+      "Owned core combat and spellcasting systems in Unreal Engine 4 for Tiny Tina's Wonderlands, including C++ networking, procedural loot balance, and cross-platform performance work.",
+    logo: GearboxLogo,
+    logoPadded: false,
+    role: "Senior Software Engineer",
+    year: "2019 - 2022",
   },
   {
-    color: "#7d16f2",
-    company: "Torus Labs",
+    color: "transparent",
+    company: "Roku, Inc.",
     description:
-      "Designed and delivered a front-end prototype from user journeys and wireframes through to working code — refining layouts and interaction flows through direct feedback until the experience felt exactly right.",
-    logo: TorusLabsLogo,
-    role: "Contract Front End Designer",
-    year: "2019",
+      "Shipped Roku channels in BrightScript and SceneGraph, cut UI lag on low-spec devices, integrated RAF advertising, and optimized HLS/DASH playback to improve start times and retention.",
+    logo: RokuLogo,
+    logoPadded: false,
+    role: "Software Engineer II",
+    year: "2015 - 2019",
   },
   {
-    color: "#0a5a4f",
-    company: "Study Smart Overseas Education",
+    color: "transparent",
+    company: "Kaplan",
     description:
-      "Built and maintained a Student Management System and IELTS portal end to end, alongside landing pages and social media across four platforms to support recruitment and digital marketing.",
-    logo: StudySmartLogo,
-    role: "Web Developer",
-    year: "2014 - 2016",
+      "Built responsive test-prep web apps and REST APIs for practice platforms, migrated offline question banks to cloud databases, and kept systems stable through peak exam traffic.",
+    logo: KaplanLogo,
+    logoPadded: false,
+    role: "Junior Software Developer",
+    year: "2013 - 2015",
+  },
+  {
+    color: "transparent",
+    company: "University of Florida",
+    description:
+      "Completed a Bachelor of Science in Computer Science, building foundations in software engineering, systems, and algorithms that shaped eleven-plus years of shipping high-impact products.",
+    logo: UniversityOfFloridaLogo,
+    logoPadded: false,
+    role: "B.S. Computer Science",
+    year: "2009 - 2013",
   },
 ];
 
@@ -90,12 +106,14 @@ export const Experience = () => {
           >
             <div className="relative flex flex-col gap-4 rounded-3xl bg-white p-6 shadow-xl">
               <div
-                className="absolute right-4 top-4 inline-block rounded-2xl p-3"
+                className={`absolute right-4 top-4 inline-block rounded-2xl ${
+                  experience.logoPadded === false ? "p-0" : "p-3"
+                }`}
                 style={{ backgroundColor: experience.color }}
               >
                 <Image
                   alt={`${experience.company} logo`}
-                  className="h-12 w-12"
+                  className="h-12 w-12 rounded-2xl object-cover"
                   src={experience.logo}
                 />
               </div>
@@ -126,12 +144,14 @@ export const Experience = () => {
               >
                 <div className="relative flex flex-col gap-4 rounded-3xl bg-white p-12 shadow-xl">
                   <div
-                    className="absolute -right-12.5 -top-12.5 inline-block rounded-2xl p-5"
+                    className={`absolute -right-12.5 -top-12.5 inline-block rounded-2xl ${
+                      experience.logoPadded === false ? "p-0" : "p-5"
+                    }`}
                     style={{ backgroundColor: experience.color }}
                   >
                     <Image
                       alt={`${experience.company} logo`}
-                      className="h-20 w-20"
+                      className="h-20 w-20 rounded-2xl object-cover"
                       src={experience.logo}
                     />
                   </div>
@@ -153,7 +173,7 @@ export const Experience = () => {
 
 const ExperienceHeading = () => (
   <Heading
-    description="The systems most people never see are often the ones they depend on most. I have spent fifteen years building exactly those - the quiet infrastructure that keeps things working when it matters."
+    description="From AAA multiplayer combat to generative AI for teachers, I have spent over a decade building systems people depend on — the quiet infrastructure that keeps classrooms, games, and products working when it matters."
     title="Experience"
   />
 );
