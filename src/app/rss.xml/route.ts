@@ -23,7 +23,7 @@ const QUERY = `
 `;
 
 export async function GET() {
-  const posts: Post[] = await client.fetch(QUERY, {}, { cache: "no-store" });
+  const posts: Post[] = await client.fetch(QUERY, {}, { next: { revalidate: 0 } });
 
   const items = posts
     .filter((post) => post.slug?.current && post.title)
