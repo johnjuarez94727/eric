@@ -104,10 +104,10 @@ export const Featured = () => {
         {projects.map((project) => (
           <article className="w-full" key={project.title}>
             <div className="overflow-hidden rounded-3xl bg-white shadow-xl">
-              <div className="relative aspect-square w-full overflow-hidden">
+              <div className="relative aspect-square w-full overflow-hidden bg-zinc-100">
                 <Image
                   alt={project.title}
-                  className="h-full w-full object-cover object-top"
+                  className="h-full w-full object-contain"
                   src={project.image}
                 />
               </div>
@@ -141,10 +141,10 @@ export const Featured = () => {
                 key={project.title}
                 style={{ width: CARD_WIDTH }}
               >
-                <div className="h-125 w-125 shrink-0 overflow-hidden rounded-3xl">
+                <div className="h-125 w-125 shrink-0 overflow-hidden rounded-3xl bg-zinc-100">
                   <Image
                     alt={project.title}
-                    className="h-full w-full object-cover object-top"
+                    className="h-full w-full object-contain"
                     src={project.image}
                   />
                 </div>

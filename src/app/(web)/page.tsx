@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import { Experience } from "@/features/Experience";
 import { Featured } from "@/features/Featured";
 import { Home } from "@/features/Home";
-import { Welcome } from "@/features/Welcome";
 
 export const metadata: Metadata = {
   alternates: {
@@ -49,7 +48,6 @@ export default function HomePage() {
         type="application/ld+json"
       />
       <div className="overflow-x-clip">
-        <Welcome />
         <Home />
         <Experience />
         <Featured />
