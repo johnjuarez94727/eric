@@ -4,10 +4,10 @@ export async function GET() {
   const content = [
     "# Eric Nguyen",
     "",
-    "> Senior Full-Stack Software Engineer at MagicSchool AI (Denver, Colorado) focused on education technology, classroom AI, school data platforms, and resilient learning systems.",
+    "> Senior Full-Stack Software Engineer at MagicSchool AI (Coral Springs, FL) focused on education technology, classroom AI, school data platforms, and resilient learning systems.",
     "",
     "## About",
-    "- Author: Eric Nguyen — Senior Full-Stack Software Engineer at MagicSchool AI, based in Denver, Colorado.",
+    "- Author: Eric Nguyen — Senior Full-Stack Software Engineer at MagicSchool AI, based in Coral Springs, FL.",
     "- Focus areas: education technology, generative AI for teachers, FERPA-safe architectures, K-12 platforms, full-stack engineering.",
     "",
     "## Key Pages",

@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   category: "Technology",
   creator: "Eric Nguyen",
   description:
-    "Portfolio of Eric Nguyen — Senior Full-Stack Software Engineer at MagicSchool AI based in Denver, Colorado, specialising in education technology, classroom AI, and FERPA-safe school platforms. Eleven-plus years shipping resilient learning products that keep working when stakes are high.",
+    "Portfolio of Eric Nguyen — Senior Full-Stack Software Engineer at MagicSchool AI based in Coral Springs, FL, specialising in education technology, classroom AI, and FERPA-safe school platforms. Eleven-plus years shipping resilient learning products that keep working when stakes are high.",
   icons: {
     apple: [{ sizes: "180x180", type: "image/png", url: "/apple-icon.png" }],
     icon: [
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     "FERPA Compliant Architecture",
     "K-12 Software Engineer",
     "Learning Platforms",
-    "Denver Developer",
+    "Coral Springs Developer",
     "Multi-LLM Integration",
     "React and TypeScript developer",
     "AI tools for teachers",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.ketanrajpal.dev"),
   openGraph: {
     description:
-      "Senior Full-Stack Software Engineer at MagicSchool AI, based in Denver, Colorado. Eleven-plus years building AI learning tools, school platforms, and scalable education technology.",
+      "Senior Full-Stack Software Engineer at MagicSchool AI, based in Coral Springs, FL. Eleven-plus years building AI learning tools, school platforms, and scalable education technology.",
     images: [
       {
         alt: "Eric Nguyen — Education Technology Engineer",
@@ -101,7 +101,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     creator: "@ketanrajpal",
     description:
-      "Senior Full-Stack Software Engineer at MagicSchool AI, based in Denver, Colorado. Eleven-plus years building AI learning tools, school platforms, and scalable education technology.",
+      "Senior Full-Stack Software Engineer at MagicSchool AI, based in Coral Springs, FL. Eleven-plus years building AI learning tools, school platforms, and scalable education technology.",
     images: ["/og-image.png"],
     title: "Eric Nguyen | Education Technology Engineer",
   },

@@ -16,15 +16,15 @@ const personJsonLd = {
   address: {
     "@type": "PostalAddress",
     addressCountry: "US",
-    addressLocality: "Denver",
-    addressRegion: "CO",
+    addressLocality: "Coral Springs",
+    addressRegion: "FL",
   },
   alumniOf: {
     "@type": "CollegeOrUniversity",
     name: "University of Florida",
   },
   description:
-    "Senior Full-Stack Software Engineer at MagicSchool AI based in Denver, Colorado. Eleven-plus years building AI learning tools, FERPA-safe school platforms, and scalable education technology.",
+    "Senior Full-Stack Software Engineer at MagicSchool AI based in Coral Springs, FL. Eleven-plus years building AI learning tools, FERPA-safe school platforms, and scalable education technology.",
   image: "https://www.ketanrajpal.dev/og-image.png",
   jobTitle: "Senior Full-Stack Software Engineer",
   name: "Eric Nguyen",

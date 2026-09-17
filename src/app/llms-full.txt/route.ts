@@ -12,7 +12,7 @@ export async function GET() {
     "---",
     "",
     "## Profile",
-    "Senior Full-Stack Software Engineer at MagicSchool AI based in Denver, Colorado.",
+    "Senior Full-Stack Software Engineer at MagicSchool AI based in Coral Springs, FL.",
     "Focus: education technology, classroom AI, FERPA-safe school platforms, and scalable learning products.",
   ].join("\n");
 
