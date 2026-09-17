@@ -21,16 +21,11 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  alternates: {
-    types: {
-      "application/rss+xml": "https://www.ketanrajpal.dev/rss.xml",
-    },
-  },
   authors: [{ name: "Eric Nguyen", url: "https://www.ketanrajpal.dev" }],
   category: "Technology",
   creator: "Eric Nguyen",
   description:
-    "Portfolio of Eric Nguyen — Senior Full-Stack Software Engineer at MagicSchool AI based in Denver, Colorado, specialising in AI systems, AAA game mechanics, and scalable edtech. Eleven-plus years shipping resilient, high-impact digital products that keep working when stakes are high.",
+    "Portfolio of Eric Nguyen — Senior Full-Stack Software Engineer at MagicSchool AI based in Denver, Colorado, specialising in education technology, classroom AI, and FERPA-safe school platforms. Eleven-plus years shipping resilient learning products that keep working when stakes are high.",
   icons: {
     apple: [{ sizes: "180x180", type: "image/png", url: "/apple-icon.png" }],
     icon: [
@@ -45,27 +40,26 @@ export const metadata: Metadata = {
     "Eric Nguyen",
     "Senior Full-Stack Software Engineer",
     "MagicSchool AI",
+    "Education Technology",
     "Edtech Engineer",
-    "AI Engineer",
-    "Full Stack Developer",
-    "Software Portfolio",
+    "Classroom AI",
+    "FERPA Compliant Architecture",
+    "K-12 Software Engineer",
+    "Learning Platforms",
     "Denver Developer",
     "Multi-LLM Integration",
-    "Unreal Engine",
     "React and TypeScript developer",
-    "AI integration developer",
-    "FERPA compliant architecture",
-    "Education technology developer",
-    "Game systems engineer",
-    "Generative AI tools",
+    "AI tools for teachers",
+    "Student data privacy",
+    "Generative AI in education",
   ],
   metadataBase: new URL("https://www.ketanrajpal.dev"),
   openGraph: {
     description:
-      "Senior Full-Stack Software Engineer at MagicSchool AI, based in Denver, Colorado. Eleven-plus years building AI systems, AAA game mechanics, and scalable edtech platforms.",
+      "Senior Full-Stack Software Engineer at MagicSchool AI, based in Denver, Colorado. Eleven-plus years building AI learning tools, school platforms, and scalable education technology.",
     images: [
       {
-        alt: "Eric Nguyen — Senior Engineer",
+        alt: "Eric Nguyen — Education Technology Engineer",
         height: 941,
         url: "/og-image.png",
         width: 1672,
@@ -73,7 +67,7 @@ export const metadata: Metadata = {
     ],
     locale: "en_US",
     siteName: "Eric Nguyen",
-    title: "Eric Nguyen | Senior Engineer",
+    title: "Eric Nguyen | Education Technology Engineer",
     type: "website",
     url: "https://www.ketanrajpal.dev",
   },
@@ -100,16 +94,16 @@ export const metadata: Metadata = {
       }
     : {}),
   title: {
-    default: "Eric Nguyen | Senior Engineer",
+    default: "Eric Nguyen | Education Technology Engineer",
     template: "%s | Eric Nguyen",
   },
   twitter: {
     card: "summary_large_image",
     creator: "@ketanrajpal",
     description:
-      "Senior Full-Stack Software Engineer at MagicSchool AI, based in Denver, Colorado. Eleven-plus years building AI systems, AAA game mechanics, and scalable edtech platforms.",
+      "Senior Full-Stack Software Engineer at MagicSchool AI, based in Denver, Colorado. Eleven-plus years building AI learning tools, school platforms, and scalable education technology.",
     images: ["/og-image.png"],
-    title: "Eric Nguyen | Senior Engineer",
+    title: "Eric Nguyen | Education Technology Engineer",
   },
 };
 
@@ -134,24 +128,12 @@ export default function RootLayout({
           href="https://cdn.sanity.io"
           rel="dns-prefetch"
         />
-        <link
-          href="https://www.ketanrajpal.dev/rss.xml"
-          rel="alternate"
-          title="Eric Nguyen RSS Feed"
-          type="application/rss+xml"
-        />
         <script
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
               name: "Eric Nguyen",
-              potentialAction: {
-                "@type": "SearchAction",
-                query: "required",
-                "query-input": "required name=query",
-                target: "https://www.ketanrajpal.dev/blog?query={query}",
-              },
               url: "https://www.ketanrajpal.dev",
             }),
           }}

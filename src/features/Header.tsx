@@ -11,7 +11,6 @@ const baseNavigation = [
   { hash: "home", href: "/", label: "Home" },
   { hash: "experience", href: "/#experience", label: "Experience" },
   { hash: "projects", href: "/#projects", label: "Projects" },
-  { hash: null, href: "/blog", label: "Blog" },
 ];
 
 const ease: Transition["ease"] = [0.22, 1, 0.36, 1];

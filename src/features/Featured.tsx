@@ -8,80 +8,74 @@ import { CardHeading, CardParagraph, CardTag } from "@/components/Card";
 import { CardLink } from "@/components/CardLink";
 import { Heading } from "@/components/Heading";
 
-import GenesisEngine from "../images/projects/genesis-engine.png";
-import GlobalLegalServicesDataPlatform from "../images/projects/global-legal-services-data-platform.png";
-import IndianDevelopmentFoundationOfOverseasIndiansWebPortal from "../images/projects/indian-development-foundation-of-overseas-indians-web-portal.png";
-import LondonSchoolOfCommerceGroupOfCollegesApplication from "../images/projects/london-school-of-commerce-group-of-colleges-application.png";
-import TheEducationGroupAdmissionsSystem from "../images/projects/the-education-group-admissions-system.png";
-import UsaAirportsLimoService from "../images/projects/usa-airports-limo-service.png";
+import EdiaAttendance from "../images/projects/edia-attendance.png";
+import EdiaDistrictIntelligence from "../images/projects/edia-district-intelligence.png";
+import MagicQuizzes from "../images/projects/magic-quizzes.png";
+import MagicSchoolStudioTools from "../images/projects/magicschool-studio-tools.png";
+import RokuPlatform from "../images/projects/roku-platform.png";
+import TinyTinasWonderlands from "../images/projects/tiny-tinas-wonderlands.png";
 
 const projects: {
   category: string;
   description: string;
-  href: string;
   image: StaticImageData;
-  link?: string;
+  link: string;
   slug: string;
   title: string;
 }[] = [
   {
-    category: "AI & Automation",
+    category: "Education Technology",
     description:
-      "An autonomous content engine that turns raw signals into publication-ready stories — continuously, without waiting to be told.",
-    href: "/projects/genesis-engine",
-    image: GenesisEngine,
-    slug: "genesis-engine",
-    title: "Genesis Engine",
-  },
-  {
-    category: "Legal Technology",
-    description:
-      "An enterprise legal platform built to hold the full weight of cross-border M&A — so the people navigating it could focus on judgment, not administration.",
-    href: "/projects/global-legal-services-data-platform",
-    image: GlobalLegalServicesDataPlatform,
-    link: "https://kpmg.com/xx/en/what-we-do/services/law/international-business-reorganizations.html",
-    slug: "global-legal-services-data-platform",
-    title: "Global Legal Services Tax & Legal Data Platform",
-  },
-  {
-    category: "Government",
-    description:
-      "A government-grade platform that gave millions of overseas Indians a trusted, transparent way to invest in the country they never stopped caring about.",
-    href: "/projects/indian-development-foundation-of-overseas-indians-web-portal",
-    image: IndianDevelopmentFoundationOfOverseasIndiansWebPortal,
-    link: "https://www.indembarg.gov.in/page/india-development-foundation-of-overseas-indians-idf-oi/",
-    slug: "indian-development-foundation-of-overseas-indians-web-portal",
-    title: "Indian Development Foundation of Overseas Indians Web Portal",
+      "Led full-stack engineering for Magic Quizzes — an AI assessment platform that turns topics into structured multiple-choice quizzes teachers can tailor to grade and standards.",
+    image: MagicQuizzes,
+    link: "https://www.magicschool.ai/tools/multiple-choice-quiz-assessment",
+    slug: "magic-quizzes",
+    title: "Magic Quizzes — AI Assessment Platform",
   },
   {
     category: "Education Technology",
     description:
-      "A bespoke admissions platform that replaced the chaos of disconnected tools with one clear, end-to-end view of every person walking through the door.",
-    href: "/projects/london-school-of-commerce-group-of-colleges-application",
-    image: LondonSchoolOfCommerceGroupOfCollegesApplication,
-    link: "https://crm.lsc.group/",
-    slug: "london-school-of-commerce-group-of-colleges-application",
-    title: "London School of Commerce Group of Colleges CRM",
+      "Built Studio Mode and custom AI tool workflows so teachers can edit AI-generated documents and launch classroom chatbots across OpenAI, Gemini, and Claude.",
+    image: MagicSchoolStudioTools,
+    link: "https://www.magicschool.ai/blog-posts/whats-new-april-2026",
+    slug: "magicschool-studio-tools",
+    title: "Studio Mode & Custom AI Tools",
   },
   {
     category: "Education Technology",
     description:
-      "A purpose-built admissions platform that made the first step into higher education feel as considered and human as everything that follows.",
-    href: "/projects/the-education-group-admissions-system",
-    image: TheEducationGroupAdmissionsSystem,
-    link: "https://app.teg.london/",
-    slug: "the-education-group-admissions-system",
-    title: "The Education Group Admissions System",
+      "Led end-to-end engineering of Edia's AI attendance platform — real-time absence processing, multilingual family outreach, intent classification, and admin dashboards.",
+    image: EdiaAttendance,
+    link: "https://www.edia.app/attendance",
+    slug: "edia-attendance",
+    title: "AI Attendance & Family Communication",
   },
   {
-    category: "Multi-Brand Platform",
+    category: "Education Technology",
     description:
-      "A single platform that powers multiple businesses simultaneously — each fully branded, each built to be found, each running without friction in the background.",
-    href: "/projects/usa-airports-limo-service",
-    image: UsaAirportsLimoService,
-    link: "https://www.usairportlimoservice.com/",
-    slug: "usa-airports-limo-service",
-    title: "United States of America Airports Limo Service",
+      "Designed and scaled Edia's MTSS data platform — unifying SIS and LMS signals into cohesive student timelines with React, D3.js, Python, and PostgreSQL.",
+    image: EdiaDistrictIntelligence,
+    link: "https://www.edia.app/district-intelligence",
+    slug: "edia-district-intelligence",
+    title: "District Intelligence / MTSS Platform",
+  },
+  {
+    category: "Gameplay Engineering",
+    description:
+      "Gameplay engineer on Tiny Tina's Wonderlands focused on first-person combat, spellcasting, network replication, procedural loot, and performance across platforms.",
+    image: TinyTinasWonderlands,
+    link: "https://playwonderlands.2k.com/game-guide/about/",
+    slug: "tiny-tinas-wonderlands",
+    title: "Tiny Tina's Wonderlands — Gameplay",
+  },
+  {
+    category: "Streaming Platforms",
+    description:
+      "Built and optimized Roku streaming applications with BrightScript and SceneGraph, including RAF advertising support and faster HLS/DASH playback starts.",
+    image: RokuPlatform,
+    link: "https://developer.roku.com/develop",
+    slug: "roku-streaming-platform",
+    title: "Roku Streaming Applications",
   },
 ];
 
@@ -113,7 +107,7 @@ export const Featured = () => {
               <div className="relative aspect-square w-full overflow-hidden">
                 <Image
                   alt={project.title}
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-cover object-top"
                   src={project.image}
                 />
               </div>
@@ -122,8 +116,10 @@ export const Featured = () => {
                 <CardHeading title={project.title} />
                 <CardParagraph description={project.description} />
                 <CardLink
-                  ariaLabel={project.title ?? "this article"}
-                  link={`/projects/${project.slug ?? ""}`}
+                  ariaLabel={project.title}
+                  label="Visit Project"
+                  link={project.link}
+                  type="external"
                 />
               </div>
             </div>
@@ -148,7 +144,7 @@ export const Featured = () => {
                 <div className="h-125 w-125 shrink-0 overflow-hidden rounded-3xl">
                   <Image
                     alt={project.title}
-                    className="h-full w-full object-cover"
+                    className="h-full w-full object-cover object-top"
                     src={project.image}
                   />
                 </div>
@@ -158,14 +154,12 @@ export const Featured = () => {
                     <CardTag tag={project.category} />
                     <CardHeading title={project.title} />
                     <CardParagraph description={project.description} />
-                    {project.link && (
-                      <CardLink
-                        ariaLabel={project.title ?? "this article"}
-                        label="Visit Project"
-                        link={project.link}
-                        type="external"
-                      />
-                    )}
+                    <CardLink
+                      ariaLabel={project.title}
+                      label="Visit Project"
+                      link={project.link}
+                      type="external"
+                    />
                   </div>
                 </div>
               </article>
@@ -179,7 +173,7 @@ export const Featured = () => {
 
 const FeaturedHeading = () => (
   <Heading
-    description="A handful of the platforms behind the work. Each one built to last. Each one still running."
+    description="Six products that show the work — classroom AI, district platforms, gameplay systems, and streaming apps. Each one still shaping how people learn, play, and watch."
     title="Featured Projects"
   />
 );

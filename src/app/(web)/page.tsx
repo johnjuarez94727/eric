@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 
 import { Experience } from "@/features/Experience";
 import { Featured } from "@/features/Featured";
-import { FromTheBlog } from "@/features/FromTheBlog";
 import { Home } from "@/features/Home";
 import { Welcome } from "@/features/Welcome";
 
@@ -26,7 +25,7 @@ const personJsonLd = {
     name: "University of Florida",
   },
   description:
-    "Senior Full-Stack Software Engineer at MagicSchool AI based in Denver, Colorado. Eleven-plus years building AI systems, AAA game mechanics, and scalable edtech platforms.",
+    "Senior Full-Stack Software Engineer at MagicSchool AI based in Denver, Colorado. Eleven-plus years building AI learning tools, FERPA-safe school platforms, and scalable education technology.",
   image: "https://www.ketanrajpal.dev/og-image.png",
   jobTitle: "Senior Full-Stack Software Engineer",
   name: "Eric Nguyen",
@@ -54,7 +53,6 @@ export default function HomePage() {
         <Home />
         <Experience />
         <Featured />
-        <FromTheBlog />
       </div>
     </>
   );

@@ -4,7 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     background_color: "#ffffff",
     description:
-      "Portfolio of Eric Nguyen — Senior Full-Stack Software Engineer at MagicSchool AI based in Denver, Colorado.",
+      "Portfolio of Eric Nguyen — Senior Full-Stack Software Engineer focused on education technology and classroom AI.",
     display: "standalone",
     icons: [
       {

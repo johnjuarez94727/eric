@@ -1,7 +1,8 @@
 "use client";
 
 import { motion, useScroll, useTransform } from "motion/react";
-import Image from "next/image";
+import Image, { type StaticImageData } from "next/image";
+import Link from "next/link";
 import { useRef } from "react";
 
 import { CardHeading, CardParagraph, CardTag } from "@/components/Card";
@@ -23,6 +24,7 @@ const experiences = [
     logo: MagicSchoolLogo,
     logoPadded: false,
     role: "Senior Full-Stack Software Engineer",
+    url: "https://www.magicschool.ai/",
     year: "2024 - Present",
   },
   {
@@ -33,6 +35,7 @@ const experiences = [
     logo: EdiaLogo,
     logoPadded: false,
     role: "Senior Software Engineer",
+    url: "https://edia.app/",
     year: "2022 - 2024",
   },
   {
@@ -43,6 +46,7 @@ const experiences = [
     logo: GearboxLogo,
     logoPadded: false,
     role: "Senior Software Engineer",
+    url: "https://www.gearboxsoftware.com/",
     year: "2019 - 2022",
   },
   {
@@ -53,6 +57,7 @@ const experiences = [
     logo: RokuLogo,
     logoPadded: false,
     role: "Software Engineer II",
+    url: "https://www.roku.com/",
     year: "2015 - 2019",
   },
   {
@@ -63,6 +68,7 @@ const experiences = [
     logo: KaplanLogo,
     logoPadded: false,
     role: "Junior Software Developer",
+    url: "https://www.kaplan.com/",
     year: "2013 - 2015",
   },
   {
@@ -73,9 +79,38 @@ const experiences = [
     logo: UniversityOfFloridaLogo,
     logoPadded: false,
     role: "B.S. Computer Science",
+    url: "https://www.ufl.edu/",
     year: "2009 - 2013",
   },
 ];
+
+const CompanyLogo = ({
+  className,
+  company,
+  logo,
+  sizeClassName,
+  url,
+}: {
+  className: string;
+  company: string;
+  logo: StaticImageData;
+  sizeClassName: string;
+  url: string;
+}) => (
+  <Link
+    aria-label={`Visit ${company} website`}
+    className={className}
+    href={url}
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <Image
+      alt={`${company} logo`}
+      className={`${sizeClassName} rounded-2xl object-cover`}
+      src={logo}
+    />
+  </Link>
+);
 
 const CARD_WIDTH = 768;
 const GAP = 200;
@@ -105,18 +140,15 @@ export const Experience = () => {
             key={`${experience.company}-${experience.year}`}
           >
             <div className="relative flex flex-col gap-4 rounded-3xl bg-white p-6 shadow-xl">
-              <div
+              <CompanyLogo
                 className={`absolute right-4 top-4 inline-block rounded-2xl ${
                   experience.logoPadded === false ? "p-0" : "p-3"
                 }`}
-                style={{ backgroundColor: experience.color }}
-              >
-                <Image
-                  alt={`${experience.company} logo`}
-                  className="h-12 w-12 rounded-2xl object-cover"
-                  src={experience.logo}
-                />
-              </div>
+                company={experience.company}
+                logo={experience.logo}
+                sizeClassName="h-12 w-12"
+                url={experience.url}
+              />
               <CardTag tag={experience.year} />
               <CardHeading title={experience.company} />
               <h4 className="text-base font-semibold uppercase tracking-wide">
@@ -143,18 +175,15 @@ export const Experience = () => {
                 style={{ width: CARD_WIDTH }}
               >
                 <div className="relative flex flex-col gap-4 rounded-3xl bg-white p-12 shadow-xl">
-                  <div
+                  <CompanyLogo
                     className={`absolute -right-12.5 -top-12.5 inline-block rounded-2xl ${
                       experience.logoPadded === false ? "p-0" : "p-5"
                     }`}
-                    style={{ backgroundColor: experience.color }}
-                  >
-                    <Image
-                      alt={`${experience.company} logo`}
-                      className="h-20 w-20 rounded-2xl object-cover"
-                      src={experience.logo}
-                    />
-                  </div>
+                    company={experience.company}
+                    logo={experience.logo}
+                    sizeClassName="h-20 w-20"
+                    url={experience.url}
+                  />
                   <CardTag tag={experience.year} />
                   <CardHeading title={experience.company} />
                   <h4 className="text-xl font-semibold uppercase tracking-wide">
@@ -173,7 +202,7 @@ export const Experience = () => {
 
 const ExperienceHeading = () => (
   <Heading
-    description="From AAA multiplayer combat to generative AI for teachers, I have spent over a decade building systems people depend on — the quiet infrastructure that keeps classrooms, games, and products working when it matters."
+    description="From test-prep platforms to generative AI for teachers, I have spent over a decade building education systems people depend on — the quiet infrastructure that keeps classrooms, districts, and learners moving when it matters."
     title="Experience"
   />
 );
